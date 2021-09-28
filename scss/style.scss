@@ -2,6 +2,7 @@ $cor-branca-padrao: #fff;
 $cor-azul-detalhes: #4B4FA1;
 $cor-laranja-padrao: #FE4400;
 $cor-preta-padrao: #303033;
+$cor-azul-claro: #F3F4F9;
 
 @font-face {
   font-family: "Metropolis Bold";
@@ -26,4 +27,8 @@ $cor-preta-padrao: #303033;
   src: url("./fonts/Metropolis-Black.otf") format("opentype");
 }
 
-@import "_reset", "_header" ;
+body {
+  min-height: 800px;
+}
+
+@import "_reset", "_header", "_main" ;

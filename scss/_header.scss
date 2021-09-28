@@ -1,7 +1,7 @@
 header {
   height: 77.48px;
-  background-color: $cor-azul-detalhes;
-  position: fixed;
+  background-color: $cor-branca-padrao;
+  position: sticky;
   width: 100%;
 }
 
@@ -18,7 +18,7 @@ header {
   &__li {
     display: inline;
     margin: 0 20px;
-    color: $cor-branca-padrao;
+    color: $cor-preta-padrao;
 }
 }
 
@@ -41,7 +41,7 @@ header {
 
   &__nav__link {
       text-decoration: none;
-      color: $cor-branca-padrao;
+      color: $cor-preta-padrao;
 
       &:hover {
           color:$cor-laranja-padrao;

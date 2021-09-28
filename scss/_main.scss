@@ -1,0 +1,111 @@
+main {
+    min-height: 600px;
+    text-align: center;
+}
+
+.corpo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 30px;
+}
+
+.principal {
+    width: 50%;
+    padding: 110px 0 100px;
+    padding-left: 40px;
+
+    &__sobretitulo {
+        font-family: 'Metropolis Medium', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: $cor-preta-padrao;
+        margin: 13.28px 0;
+        text-align: left;
+    }
+
+    &__titulo {
+        font-family: 'Metropolis Black', sans-serif;
+        margin: .67rem 0;
+        color: $cor-laranja-padrao;
+        font-size: 40px;
+        text-align: left;
+    }
+
+    &__subtitulo {
+        font-family: "Metropolis Regular", sans-serif;
+        font-size: 1.1rem;
+        line-height: 28px;
+        font-weight: bold;
+        margin: .83rem 0;
+        text-align: left;
+    }
+
+    &__botao {
+        display: inline-flex;
+        background-color: #FC6027;
+        font-family: "Metropolis Bold", sans-serif;
+        color: $cor-branca-padrao;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        padding: 15px 40px;
+        font-size: 16px;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: $cor-laranja-padrao;
+            transition: all .5s ease;
+        }
+    }
+}
+
+img {
+    width: 530px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.container {
+    background-color: $cor-azul-claro;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.comunicado {
+    width: 50%;
+    padding: 110px 0 100px;
+    padding-right: 40px;
+
+    &__titulo {
+        font-family: 'Metropolis Medium', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: $cor-preta-padrao;
+    }
+
+    &__subtitulo {
+        font-family: "Metropolis Black", sans-serif;
+        font-size: 36px;
+        color: $cor-preta-padrao;
+        text-align: left;
+    }
+
+    &__lista {
+        text-align: left;
+    }
+}
+
+.lista__titulo {
+    font-family: "Metropolis Medium", sans-serif;
+    font-size: 28px;
+    color: $cor-preta-padrao;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.imagem img {
+    width: 500px;
+}
