@@ -4,6 +4,10 @@ $cor-laranja-padrao: #FE4400;
 $cor-preta-padrao: #303033;
 $cor-azul-claro: #F3F4F9;
 
+@function calculateRem($size) {
+    @return $size / 16px * 1rem;
+}
+
 @font-face {
   font-family: "Metropolis Bold";
   src: url("./fonts/Metropolis-Bold.otf") format("opentype");

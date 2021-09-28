@@ -127,7 +127,7 @@ header {
 }
 
 main {
-  min-height: 600px;
+  min-height: 37.5rem;
   text-align: center;
 }
 
@@ -135,33 +135,33 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5rem 30px;
+  margin: 5rem 1.875rem;
 }
 
 .principal {
   width: 50%;
-  padding: 110px 0 100px;
-  padding-left: 40px;
+  padding: 6.875rem 0 6.25rem;
+  padding-left: 2.5rem;
 }
 .principal__sobretitulo {
   font-family: "Metropolis Medium", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   color: #303033;
-  margin: 13.28px 0;
+  margin: 0.83rem 0;
   text-align: left;
 }
 .principal__titulo {
   font-family: "Metropolis Black", sans-serif;
   margin: 0.67rem 0;
   color: #FE4400;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: left;
 }
 .principal__subtitulo {
   font-family: "Metropolis Regular", sans-serif;
-  font-size: 1.1rem;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: bold;
   margin: 0.83rem 0;
   text-align: left;
@@ -174,17 +174,17 @@ main {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  padding: 15px 40px;
-  font-size: 16px;
-  border-radius: 8px;
+  padding: 0.9375rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
 }
 .principal__botao:hover {
   background-color: #FE4400;
   transition: all 0.5s ease;
 }
 
-img {
-  width: 530px;
+.imagem__cuidados {
+  width: 33.125rem;
   overflow: hidden;
   text-align: right;
 }
@@ -194,40 +194,99 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0 2.5rem;
+  padding-bottom: 3.125rem;
+}
+
+.avisos {
+  background: #F3F4F9;
+  padding: 3.75rem 3.75rem 2.5rem 3.75rem;
+}
+.avisos__titulo {
+  font-family: "Metropolis Medium", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  color: #303033;
+}
+.avisos__subtitulo {
+  font-family: "Metropolis Black", sans-serif;
+  font-size: 2.375rem;
 }
 
 .comunicado {
   width: 50%;
-  padding: 110px 0 100px;
-  padding-right: 40px;
-}
-.comunicado__titulo {
-  font-family: "Metropolis Medium", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #303033;
-}
-.comunicado__subtitulo {
-  font-family: "Metropolis Black", sans-serif;
-  font-size: 36px;
-  color: #303033;
-  text-align: left;
+  padding: 6.875rem 0 6.25rem;
+  padding-left: 12.5rem;
 }
 .comunicado__lista {
+  text-align: center;
+  list-style: inside disc;
   text-align: left;
+  font-family: "Metropolis Regular", sans-serif;
+  font-size: 1.125rem;
+  color: #303033;
+}
+.comunicado__item {
+  margin: 0.625rem;
 }
 
 .lista__titulo {
   font-family: "Metropolis Medium", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #303033;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 1.25rem 0;
+  text-align: left;
 }
 
 .imagem img {
-  width: 500px;
+  width: 31.25rem;
+}
+
+.gradient {
+  padding: 5rem;
+  background-image: linear-gradient(#F3F4F9, #303033);
+}
+
+.distanciamento {
+  padding: 1.875rem;
+  background: #303033;
+  color: #fff;
+}
+.distanciamento__titulo {
+  font-family: "Metropolis Medium", sans-serif;
+  font-size: 1rem;
+  padding-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+.distanciamento__subtitulo {
+  font-family: "Metropolis Black", sans-serif;
+  font-size: 2.375rem;
+}
+
+.divisoria {
+  background-color: #303033;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2.5rem;
+  padding-bottom: 3.125rem;
+}
+.divisoria__imagem {
+  width: 31.25rem;
+}
+.divisoria__txt {
+  color: #fff;
+  font-family: "Metropolis Regular", sans-serif;
+  font-size: 1.125rem;
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+.gradient__reverse {
+  padding: 5rem;
+  background-image: linear-gradient(#303033, #F3F4F9);
 }
 
 /*# sourceMappingURL=style.css.map */
