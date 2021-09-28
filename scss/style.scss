@@ -26,4 +26,4 @@ $cor-preta-padrao: #303033;
   src: url("./fonts/Metropolis-Black.otf") format("opentype");
 }
 
-@import "_header";
+@import "_reset", "_header" ;
