@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Metropolis Bold";
+  src: url("./fonts/Metropolis-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis Regular";
+  src: url("./fonts/Metropolis-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis Medium";
+  src: url("./fonts/Metropolis-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis Black";
+  src: url("./fonts/Metropolis-Black.otf") format("opentype");
+}
+header {
+  height: 77.48px;
+  background-color: #4B4FA1;
+  position: fixed;
+  width: 100%;
+}
+
+.nav__ul {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.nav__ul__li {
+  display: inline;
+  margin: 0 20px;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 50px;
+  font-family: "Metropolis Bold", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  top: 25px;
+}
+.wrapper__logo {
+  width: 80px;
+}
+.wrapper__nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.wrapper__nav__link:hover {
+  color: #FE4400;
+  transition: 0.7s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
