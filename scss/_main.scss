@@ -61,7 +61,7 @@ main {
 }
 
 .imagem__cuidados {
-    width: calculateRem(530px);
+    width: calculateRem(550px);
     overflow: hidden;
     text-align: right;
 }
@@ -71,7 +71,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 calculateRem(40px);
+    padding: 0 calculateRem(30px);
     padding-bottom: calculateRem(50px);
 }
 
@@ -125,10 +125,6 @@ main {
     width: calculateRem(500px);
 }
 
-.gradient {
-    padding: calculateRem(80px);
-    background-image: linear-gradient(#F3F4F9, #303033);
-}
 
 .distanciamento {
     padding: calculateRem(30px);
@@ -169,7 +165,41 @@ main {
     }
 }
 
-.gradient__reverse {
-    padding: calculateRem(80px);
-    background-image: linear-gradient(#303033, #F3F4F9);
+.mascara {
+    padding: calculateRem(30px);
+    background-color: $cor-branca-padrao;
+    color: $cor-preta-padrao;
+
+    &__titulo {
+        font-family: "Metropolis Medium", sans-serif;
+        font-size: calculateRem(16px);
+        padding-top: calculateRem(32px);
+        margin-bottom: calculateRem(20px);
+    }
+
+    &__subtitulo {
+        font-family: "Metropolis Black", sans-serif;
+        font-size: calculateRem(38px);
+        margin-bottom: calculateRem(20px);
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 calculateRem(40px);
+    padding-bottom: calculateRem(50px);
+
+    &__imagem {
+        width: calculateRem(530px);
+    }
+}
+
+.textos {
+    text-align: left;
+    font-family: "Metropolis Regular", sans-serif;
+    padding-left: calculateRem(40px);
+    font-size: calculateRem(18px);
+    color: $cor-preta-padrao;
 }
