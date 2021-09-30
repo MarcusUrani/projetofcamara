@@ -32,7 +32,7 @@ $cor-azul-claro: #F3F4F9;
 }
 
 body {
-  min-height: 800px;
+  overflow-x: hidden;
 }
 
 @import "_reset", "_header", "_main", "_footer" ;
