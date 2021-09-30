@@ -1,0 +1,18 @@
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: $cor-preta-padrao;
+    padding: calculateRem(10px);
+
+    &__txt {
+        font-family: "Metropolis Black", sans-serif;
+        font-size: calculateRem(25px);
+        color: $cor-branca-padrao;
+    }
+  }
+  
+  .instagram {
+    width: 32px;
+  }
