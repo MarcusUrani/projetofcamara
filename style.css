@@ -134,7 +134,7 @@ header {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1250px) {
   body {
     overflow-x: hidden;
   }
@@ -143,7 +143,7 @@ header {
     position: absolute;
     top: 4.375rem;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     left: 0;
     background: #fff;
     flex-direction: column;
@@ -158,6 +158,10 @@ header {
     opacity: 0;
     position: relative;
     right: 50px;
+  }
+
+  .list__li:last-child {
+    margin-right: 0;
   }
 
   .mobile__menu {
@@ -210,6 +214,7 @@ main {
   width: 50%;
   padding: 6.875rem 0 6.25rem;
   padding-left: 2.5rem;
+  text-align: left;
 }
 .principal__sobretitulo {
   font-family: "Metropolis Medium", sans-serif;
@@ -306,7 +311,7 @@ main {
   text-align: left;
 }
 
-.imagem img {
+.imagem__principal {
   width: 37.5rem;
 }
 
@@ -470,6 +475,92 @@ main {
   transition: all 0.5s ease;
 }
 
+@media (max-width: 999px) {
+  .corpo {
+    justify-content: flex-start;
+  }
+
+  .principal {
+    width: 100%;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+  .principal__titulo {
+    margin: 1.2875rem 0;
+  }
+
+  .imagem__cuidados {
+    display: none;
+  }
+
+  .container {
+    justify-content: flex-start;
+  }
+
+  .imagem__principal {
+    display: none;
+  }
+
+  .comunicado {
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+    width: 100%;
+  }
+  .comunicado__lista {
+    font-size: 1.375rem;
+  }
+
+  .divisoria {
+    justify-content: flex-start;
+  }
+  .divisoria__imagem {
+    display: none;
+  }
+  .divisoria__txt {
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+
+  .flex {
+    justify-content: flex-start;
+  }
+  .flex__imagem {
+    display: none;
+  }
+
+  .textos {
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+
+  .flexible {
+    justify-content: flex-start;
+  }
+  .flexible__imagem {
+    display: none;
+  }
+
+  .texts {
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+
+  .agendamento {
+    justify-content: flex-start;
+  }
+  .agendamento__imagem {
+    display: none;
+  }
+  .agendamento__textos {
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+    width: 100%;
+  }
+}
 .rodape {
   display: flex;
   justify-content: center;

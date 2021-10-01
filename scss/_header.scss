@@ -55,7 +55,7 @@ header {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1250px) {
   body {
     overflow-x: hidden;
   }
@@ -64,7 +64,7 @@ header {
     position: absolute;
     top: calculateRem(70px);
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     left: 0;
     background: $cor-branca-padrao;
     flex-direction: column;
@@ -79,6 +79,10 @@ header {
     opacity: 0;
     position: relative;
     right: 50px;
+  }
+
+  .list__li:last-child {
+    margin-right: 0;
   }
 
   .mobile__menu {

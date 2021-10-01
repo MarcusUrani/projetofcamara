@@ -14,6 +14,7 @@ main {
     width: 50%;
     padding: calculateRem(110px) 0 calculateRem(100px);
     padding-left: calculateRem(40px);
+    text-align: left;
 
     &__sobretitulo {
         font-family: 'Metropolis Medium', sans-serif;
@@ -119,7 +120,7 @@ main {
     text-align: left;
 }
 
-.imagem img {
+.imagem__principal {
     width: calculateRem(600px);
 }
 
@@ -297,6 +298,100 @@ main {
                 background-color: $cor-laranja-padrao;
                 transition: all .5s ease;
             }
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .corpo {
+        justify-content: flex-start;
+    }
+
+    .principal {
+        width: 100%;
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+
+        &__titulo {
+            margin: calculateRem(20.60px) 0;
+        }
+    }
+
+    .imagem__cuidados {
+        display: none;
+    }
+
+    .container {
+        justify-content: flex-start;
+    }
+
+    .imagem__principal {
+        display: none;
+    }
+    .comunicado {
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+        width: 100%;
+
+        &__lista {
+            font-size: calculateRem(22px);
+        }
+    }
+    
+    .divisoria {
+        justify-content: flex-start;
+
+        &__imagem {
+            display: none;
+        }
+
+        &__txt {
+            font-size: calculateRem(22px);
+            padding: calculateRem(66px) 0 calculateRem(30px);
+            padding-left: calculateRem(20px);
+        }
+    }
+
+    .flex {
+        justify-content: flex-start;
+
+        &__imagem {
+            display: none;
+        }
+    }
+
+    .textos {
+        font-size: calculateRem(22px);
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+    }
+
+    .flexible {
+        justify-content: flex-start;
+
+        &__imagem {
+            display: none;
+        }
+    }
+
+    .texts {
+        font-size: calculateRem(22px);
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+    }
+
+    .agendamento {
+        justify-content: flex-start;
+    
+        &__imagem {
+            display: none;
+        }
+    
+        &__textos {
+            font-size: calculateRem(22px);
+            padding: calculateRem(66px) 0 calculateRem(30px);
+            padding-left: calculateRem(20px);
+            width: 100%;
         }
     }
 }
