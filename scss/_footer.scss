@@ -16,3 +16,14 @@
   .instagram {
     width: 32px;
   }
+
+@media (max-width: 999px) {
+
+    .rodape {
+      gap: 2rem;
+
+      &__txt {
+        font-size: calculateRem(16px);
+      }
+  }
+}  
