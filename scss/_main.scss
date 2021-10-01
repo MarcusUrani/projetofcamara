@@ -354,6 +354,7 @@ main {
 
     .flex {
         justify-content: flex-start;
+        padding-left: calculateRem(10px);
 
         &__imagem {
             display: none;
@@ -361,13 +362,16 @@ main {
     }
 
     .textos {
+        width: 100%;
         font-size: calculateRem(22px);
         padding: calculateRem(66px) 0 calculateRem(30px);
         padding-left: calculateRem(20px);
+        text-align: left;
     }
 
     .flexible {
         justify-content: flex-start;
+        padding-left: calculateRem(10px);
 
         &__imagem {
             display: none;
