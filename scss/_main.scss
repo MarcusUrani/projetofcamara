@@ -137,7 +137,7 @@ main {
 
 .distanciamento {
     padding: calculateRem(30px);
-    background: $cor-preta-padrao;
+    background: $cor-azul-detalhes;
     color: $cor-branca-padrao;
 
     &__titulo {
@@ -154,7 +154,7 @@ main {
 }
 
 .divisoria {
-    background-color: $cor-preta-padrao;
+    background-color: $cor-azul-detalhes;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
