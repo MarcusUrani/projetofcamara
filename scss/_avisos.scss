@@ -1,0 +1,18 @@
+.avisos {
+    background: $cor-azul-claro;
+    padding: calculateRem(60px) calculateRem(60px) calculateRem(40px) calculateRem(60px);
+
+    &__titulo {
+        font-family: 'Metropolis Medium', sans-serif;
+        font-size: calculateRem(16px);
+        font-weight: bold;
+        margin-bottom: calculateRem(20px);
+        color: $cor-preta-padrao;
+        text-transform: uppercase;
+    }
+
+    &__subtitulo {
+        font-family: "Metropolis Black", sans-serif;
+        font-size: calculateRem(38px);
+    }
+}

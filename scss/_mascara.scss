@@ -1,0 +1,50 @@
+.mascara {
+    padding: calculateRem(30px);
+    background-color: $cor-branca-padrao;
+    color: $cor-preta-padrao;
+
+    &__titulo {
+        font-family: "Metropolis Medium", sans-serif;
+        font-size: calculateRem(16px);
+        padding-top: calculateRem(32px);
+        margin-bottom: calculateRem(20px);
+        text-transform: uppercase;
+    }
+
+    &__subtitulo {
+        font-family: "Metropolis Black", sans-serif;
+        font-size: calculateRem(38px);
+        margin-bottom: calculateRem(20px);
+    }
+    
+    &__divisoria {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 calculateRem(40px);
+        padding-bottom: calculateRem(50px);
+    }
+}
+
+.texto {
+    text-align: left;
+    font-family: "Metropolis Regular", sans-serif;
+    padding: 0 calculateRem(40px);
+    font-size: calculateRem(18px);
+    color: $cor-preta-padrao;
+}
+
+@media (max-width: 999px) {  
+    .mascara__divisoria {
+        justify-content: flex-start;
+        padding-left: calculateRem(10px);
+    }
+
+    .texto {
+        width: 100%;
+        font-size: calculateRem(22px);
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+        text-align: left;
+    }
+}

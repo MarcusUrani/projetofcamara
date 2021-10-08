@@ -24,6 +24,15 @@ body {
   overflow-x: hidden;
 }
 
+.imagem {
+  width: 37.5rem;
+}
+
+main {
+  min-height: 37.5rem;
+  text-align: center;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -198,11 +207,6 @@ header {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 }
-main {
-  min-height: 37.5rem;
-  text-align: center;
-}
-
 .cuidados {
   display: flex;
   justify-content: space-evenly;
@@ -257,15 +261,24 @@ main {
   transition: all 0.5s ease;
 }
 
-.reabertura {
-  background-color: #F3F4F9;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 1.875rem;
-  padding-bottom: 3.125rem;
-}
+@media (max-width: 999px) {
+  .cuidados {
+    justify-content: flex-start;
+  }
 
+  .principal {
+    width: 100%;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+  .principal__titulo {
+    margin: 1.2875rem 0;
+  }
+
+  .imagem {
+    display: none;
+  }
+}
 .avisos {
   background: #F3F4F9;
   padding: 3.75rem 3.75rem 2.5rem 3.75rem;
@@ -281,6 +294,15 @@ main {
 .avisos__subtitulo {
   font-family: "Metropolis Black", sans-serif;
   font-size: 2.375rem;
+}
+
+.reabertura {
+  background-color: #F3F4F9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1.875rem;
+  padding-bottom: 3.125rem;
 }
 
 .comunicado {
@@ -318,10 +340,16 @@ main {
   text-align: left;
 }
 
-.imagem {
-  width: 37.5rem;
+@media (max-width: 999px) {
+  .comunicado {
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+    width: 100%;
+  }
+  .comunicado__lista {
+    font-size: 1.375rem;
+  }
 }
-
 .distanciamento {
   padding: 1.875rem;
   background: #4B4FA1;
@@ -339,7 +367,7 @@ main {
   font-size: 2.375rem;
 }
 
-.divisoria {
+.container {
   background-color: #4B4FA1;
   display: flex;
   justify-content: space-evenly;
@@ -347,7 +375,7 @@ main {
   padding: 0 2.5rem;
   padding-bottom: 3.125rem;
 }
-.divisoria__txt {
+.container__texto {
   color: #fff;
   font-family: "Metropolis Regular", sans-serif;
   font-size: 1.125rem;
@@ -355,6 +383,16 @@ main {
   text-align: left;
 }
 
+@media (max-width: 999px) {
+  .container {
+    justify-content: flex-start;
+  }
+  .container__texto {
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+}
 .mascara {
   padding: 1.875rem;
   background-color: #fff;
@@ -372,8 +410,7 @@ main {
   font-size: 2.375rem;
   margin-bottom: 1.25rem;
 }
-
-.box {
+.mascara__divisoria {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -389,6 +426,20 @@ main {
   color: #303033;
 }
 
+@media (max-width: 999px) {
+  .mascara__divisoria {
+    justify-content: flex-start;
+    padding-left: 0.625rem;
+  }
+
+  .texto {
+    width: 100%;
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+    text-align: left;
+  }
+}
 .temperatura {
   padding: 1.875rem;
   background-color: #4B4FA1;
@@ -406,8 +457,7 @@ main {
   font-size: 2.375rem;
   margin-bottom: 1.25rem;
 }
-
-.flex {
+.temperatura__divisoria {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -423,6 +473,18 @@ main {
   color: #fff;
 }
 
+@media (max-width: 999px) {
+  .temperatura__divisoria {
+    justify-content: flex-start;
+    padding-left: 0.625rem;
+  }
+
+  .paragrafo {
+    font-size: 1.375rem;
+    padding: 4.125rem 0 1.875rem;
+    padding-left: 1.25rem;
+  }
+}
 .agenda {
   display: flex;
   justify-content: space-evenly;
@@ -476,69 +538,6 @@ main {
 }
 
 @media (max-width: 999px) {
-  .cuidados {
-    justify-content: flex-start;
-  }
-
-  .principal {
-    width: 100%;
-    padding: 4.125rem 0 1.875rem;
-    padding-left: 1.25rem;
-  }
-  .principal__titulo {
-    margin: 1.2875rem 0;
-  }
-
-  .imagem {
-    display: none;
-  }
-
-  .container {
-    justify-content: flex-start;
-  }
-
-  .comunicado {
-    padding: 4.125rem 0 1.875rem;
-    padding-left: 1.25rem;
-    width: 100%;
-  }
-  .comunicado__lista {
-    font-size: 1.375rem;
-  }
-
-  .divisoria {
-    justify-content: flex-start;
-  }
-  .divisoria__txt {
-    font-size: 1.375rem;
-    padding: 4.125rem 0 1.875rem;
-    padding-left: 1.25rem;
-  }
-
-  .box {
-    justify-content: flex-start;
-    padding-left: 0.625rem;
-  }
-
-  .texto {
-    width: 100%;
-    font-size: 1.375rem;
-    padding: 4.125rem 0 1.875rem;
-    padding-left: 1.25rem;
-    text-align: left;
-  }
-
-  .flex {
-    justify-content: flex-start;
-    padding-left: 0.625rem;
-  }
-
-  .paragrafo {
-    font-size: 1.375rem;
-    padding: 4.125rem 0 1.875rem;
-    padding-left: 1.25rem;
-  }
-
   .agenda {
     justify-content: flex-start;
   }

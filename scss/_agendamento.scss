@@ -1,0 +1,69 @@
+.agenda {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: calculateRem(80px) calculateRem(30px);
+}
+
+.agendamento {
+    width: 50%;
+    padding: calculateRem(110px) 0 calculateRem(100px);
+    padding: 0 calculateRem(40px);
+    text-align: left;
+
+        &__titulo {
+            font-family: 'Metropolis Medium', sans-serif;
+            font-weight: bold;
+            font-size: calculateRem(16px);
+            color: $cor-preta-padrao;
+            margin: calculateRem(13.28px) 0;
+            text-transform: uppercase;
+        }
+
+        &__subtitulo {
+            font-family: 'Metropolis Black', sans-serif;
+            margin: calculateRem(10.72px) 0;
+            color: $cor-laranja-padrao;
+            font-size: calculateRem(40px);
+        }
+
+        &__paragrafo {
+            font-family: "Metropolis Regular", sans-serif;
+            font-size: calculateRem(18px);
+            line-height: calculateRem(28px);
+            font-weight: bold;
+            margin: calculateRem(13.28px) 0;
+        }
+
+        &__botao {
+            display: inline-flex;
+            margin-top: calculateRem(13.28px);
+            background-color: #FC6027;
+            font-family: "Metropolis Bold", sans-serif;
+            color: $cor-branca-padrao;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            padding: calculateRem(15px) calculateRem(40px);
+            font-size: calculateRem(16px);
+            border-radius: calculateRem(8px);
+
+            &:hover {
+                background-color: $cor-laranja-padrao;
+                transition: all .5s ease;
+            }
+        }
+}
+
+@media (max-width: 999px) {  
+    .agenda {
+        justify-content: flex-start;
+    }
+
+    .agendamento {
+        font-size: calculateRem(22px);
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+        width: 100%;
+    }
+}
