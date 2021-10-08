@@ -3,7 +3,7 @@ main {
     text-align: center;
 }
 
-.corpo {
+.cuidados {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -16,16 +16,17 @@ main {
     padding-left: calculateRem(40px);
     text-align: left;
 
-    &__sobretitulo {
+    &__titulo {
         font-family: 'Metropolis Medium', sans-serif;
         font-weight: bold;
         font-size: calculateRem(16px);
         color: $cor-preta-padrao;
         margin: calculateRem(13.28px) 0;
         text-align: left;
+        text-transform: uppercase;
     }
 
-    &__titulo {
+    &__subtitulo {
         font-family: 'Metropolis Black', sans-serif;
         margin: calculateRem(10.72px) 0;
         color: $cor-laranja-padrao;
@@ -33,7 +34,7 @@ main {
         text-align: left;
     }
 
-    &__subtitulo {
+    &__texto {
         font-family: "Metropolis Regular", sans-serif;
         font-size: calculateRem(18px);
         line-height: calculateRem(28px);
@@ -61,11 +62,7 @@ main {
     }
 }
 
-.imagem__cuidados {
-    width: calculateRem(600px);
-}
-
-.container {
+.reabertura {
     background-color: $cor-azul-claro;
     display: flex;
     justify-content: space-evenly;
@@ -84,6 +81,7 @@ main {
         font-weight: bold;
         margin-bottom: calculateRem(20px);
         color: $cor-preta-padrao;
+        text-transform: uppercase;
     }
 
     &__subtitulo {
@@ -130,7 +128,7 @@ main {
     text-align: left;
 }
 
-.imagem__principal {
+.imagem {
     width: calculateRem(600px);
 }
 
@@ -145,6 +143,7 @@ main {
         font-size: calculateRem(16px);
         padding-top: calculateRem(32px);
         margin-bottom: calculateRem(20px);
+        text-transform: uppercase;
     }
 
     &__subtitulo {
@@ -161,9 +160,6 @@ main {
     padding: 0 calculateRem(40px);
     padding-bottom: calculateRem(50px);
 
-    &__imagem {
-        width: calculateRem(600px);
-    }
 
     &__txt {
         color: $cor-branca-padrao;
@@ -184,6 +180,7 @@ main {
         font-size: calculateRem(16px);
         padding-top: calculateRem(32px);
         margin-bottom: calculateRem(20px);
+        text-transform: uppercase;
     }
 
     &__subtitulo {
@@ -199,10 +196,6 @@ main {
     align-items: center;
     padding: 0 calculateRem(40px);
     padding-bottom: calculateRem(50px);
-
-    &__imagem {
-        width: calculateRem(600px);
-    }
 }
 
 .texto {
@@ -223,6 +216,7 @@ main {
         font-size: calculateRem(16px);
         padding-top: calculateRem(32px);
         margin-bottom: calculateRem(20px);
+        text-transform: uppercase;
     }
 
     &__subtitulo {
@@ -238,10 +232,6 @@ main {
     align-items: center;
     padding: 0 calculateRem(40px);
     padding-bottom: calculateRem(50px);
-
-    &__imagem {
-        width: calculateRem(600px);
-    }
 }
 
 .paragrafo {
@@ -252,21 +242,18 @@ main {
     color: $cor-branca-padrao;
 }
 
-.agendamento {
+.agenda {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: calculateRem(80px) calculateRem(30px);
+}
 
-    &__imagem {
-        width: calculateRem(530px);
-    }
-
-    &__textos {
-        width: 50%;
-        padding: calculateRem(110px) 0 calculateRem(100px);
-        padding: 0 calculateRem(40px);
-        text-align: left;
+.agendamento {
+    width: 50%;
+    padding: calculateRem(110px) 0 calculateRem(100px);
+    padding: 0 calculateRem(40px);
+    text-align: left;
 
         &__titulo {
             font-family: 'Metropolis Medium', sans-serif;
@@ -274,6 +261,7 @@ main {
             font-size: calculateRem(16px);
             color: $cor-preta-padrao;
             margin: calculateRem(13.28px) 0;
+            text-transform: uppercase;
         }
 
         &__subtitulo {
@@ -309,11 +297,10 @@ main {
                 transition: all .5s ease;
             }
         }
-    }
 }
 
 @media (max-width: 999px) {
-    .corpo {
+    .cuidados {
         justify-content: flex-start;
     }
 
@@ -327,16 +314,12 @@ main {
         }
     }
 
-    .imagem__cuidados {
+    .imagem{
         display: none;
     }
 
     .container {
         justify-content: flex-start;
-    }
-
-    .imagem__principal {
-        display: none;
     }
     .comunicado {
         padding: calculateRem(66px) 0 calculateRem(30px);
@@ -351,10 +334,6 @@ main {
     .divisoria {
         justify-content: flex-start;
 
-        &__imagem {
-            display: none;
-        }
-
         &__txt {
             font-size: calculateRem(22px);
             padding: calculateRem(66px) 0 calculateRem(30px);
@@ -365,10 +344,6 @@ main {
     .box {
         justify-content: flex-start;
         padding-left: calculateRem(10px);
-
-        &__imagem {
-            display: none;
-        }
     }
 
     .texto {
@@ -382,10 +357,6 @@ main {
     .flex {
         justify-content: flex-start;
         padding-left: calculateRem(10px);
-
-        &__imagem {
-            display: none;
-        }
     }
 
     .paragrafo {
@@ -394,18 +365,14 @@ main {
         padding-left: calculateRem(20px);
     }
 
-    .agendamento {
+    .agenda {
         justify-content: flex-start;
-    
-        &__imagem {
-            display: none;
-        }
-    
-        &__textos {
-            font-size: calculateRem(22px);
-            padding: calculateRem(66px) 0 calculateRem(30px);
-            padding-left: calculateRem(20px);
-            width: 100%;
-        }
+    }
+
+    .agendamento {
+        font-size: calculateRem(22px);
+        padding: calculateRem(66px) 0 calculateRem(30px);
+        padding-left: calculateRem(20px);
+        width: 100%;
     }
 }
