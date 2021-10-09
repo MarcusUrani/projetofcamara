@@ -152,11 +152,10 @@ header {
     position: absolute;
     top: 4.375rem;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     left: 0;
     background: #fff;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: flex-end;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
@@ -166,7 +165,11 @@ header {
     color: #FE4400;
     opacity: 0;
     position: relative;
-    right: 50px;
+    right: 3.125rem;
+  }
+
+  .list__li:first-child {
+    margin-top: 3.125rem;
   }
 
   .list__li:last-child {
@@ -489,7 +492,9 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5rem 1.875rem;
+  padding: 5rem 1.875rem;
+  background-color: #FE4400;
+  color: #fff;
 }
 
 .agendamento {
@@ -502,14 +507,14 @@ header {
   font-family: "Metropolis Medium", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color: #303033;
+  color: #fff;
   margin: 0.83rem 0;
   text-transform: uppercase;
 }
 .agendamento__subtitulo {
   font-family: "Metropolis Black", sans-serif;
   margin: 0.67rem 0;
-  color: #FE4400;
+  color: #fff;
   font-size: 2.5rem;
 }
 .agendamento__paragrafo {
@@ -522,7 +527,7 @@ header {
 .agendamento__botao {
   display: inline-flex;
   margin-top: 0.83rem;
-  background-color: #FC6027;
+  background-color: #4B4FA1;
   font-family: "Metropolis Bold", sans-serif;
   color: #fff;
   text-decoration: none;
@@ -533,7 +538,8 @@ header {
   border-radius: 0.5rem;
 }
 .agendamento__botao:hover {
-  background-color: #FE4400;
+  background-color: #F3F4F9;
+  color: #303033;
   transition: all 0.5s ease;
 }
 

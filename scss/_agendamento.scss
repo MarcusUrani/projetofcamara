@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: calculateRem(80px) calculateRem(30px);
+    padding: calculateRem(80px) calculateRem(30px);
+    background-color: $cor-laranja-padrao;
+    color: $cor-branca-padrao;
 }
 
 .agendamento {
@@ -15,7 +17,7 @@
             font-family: 'Metropolis Medium', sans-serif;
             font-weight: bold;
             font-size: calculateRem(16px);
-            color: $cor-preta-padrao;
+            color: $cor-branca-padrao;
             margin: calculateRem(13.28px) 0;
             text-transform: uppercase;
         }
@@ -23,7 +25,7 @@
         &__subtitulo {
             font-family: 'Metropolis Black', sans-serif;
             margin: calculateRem(10.72px) 0;
-            color: $cor-laranja-padrao;
+            color: $cor-branca-padrao;
             font-size: calculateRem(40px);
         }
 
@@ -38,7 +40,7 @@
         &__botao {
             display: inline-flex;
             margin-top: calculateRem(13.28px);
-            background-color: #FC6027;
+            background-color: $cor-azul-detalhes;
             font-family: "Metropolis Bold", sans-serif;
             color: $cor-branca-padrao;
             text-decoration: none;
@@ -49,7 +51,8 @@
             border-radius: calculateRem(8px);
 
             &:hover {
-                background-color: $cor-laranja-padrao;
+                background-color: $cor-azul-claro;
+                color: $cor-preta-padrao;
                 transition: all .5s ease;
             }
         }
