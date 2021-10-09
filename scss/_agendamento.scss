@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: calculateRem(80px) calculateRem(30px);
+    padding: calculateRem(20px) calculateRem(30px);
     background-color: $cor-laranja-padrao;
     color: $cor-branca-padrao;
 }
 
 .agendamento {
     width: 50%;
-    padding: calculateRem(110px) 0 calculateRem(100px);
+    padding: calculateRem(80px) 0 calculateRem(100px);
     padding: 0 calculateRem(40px);
     text-align: left;
 
